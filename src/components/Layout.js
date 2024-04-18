@@ -1,10 +1,7 @@
-import { Component } from '../library/Component.js';
-
-
 export default function Layout() {
-  const props = { class: 'layout' };
-
-  return Component(props, `
-  
-  `);
+  return `
+    <div class="layout">
+      <h2>Hi</h2>
+    </div>
+  `;
 }

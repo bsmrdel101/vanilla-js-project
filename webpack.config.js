@@ -41,6 +41,7 @@ const config = {
         target: 'http://localhost:8002',
       },
     ],
+    historyApiFallback: true,
   },
 };
 
