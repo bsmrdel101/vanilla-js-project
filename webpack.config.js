@@ -6,6 +6,8 @@ import { dirname } from 'path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+
 
 const config = {
   mode: 'production',
@@ -43,6 +45,13 @@ const config = {
     ],
     historyApiFallback: true,
   },
+  plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public', to: 'public' }
+      ],
+    }),
+  ],
 };
 
 export default config;
