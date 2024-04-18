@@ -1,5 +1,6 @@
-import html from './library/html.js';
+import './library/html.js';
 import Router from './components/Router.js';
+import { attachEvents } from './library/listen.js';
 import './styles/styles.scss';
 
 function main() {
@@ -10,3 +11,4 @@ function main() {
 }
 
 document.body.appendChild(main());
+attachEvents();
