@@ -1,3 +1,4 @@
+import html from './library/html.js';
 import Router from './components/Router.js';
 import './styles/styles.scss';
 

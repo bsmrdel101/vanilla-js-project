@@ -1,7 +1,11 @@
-export default function Layout() {
+export default function Layout(children) {
   return `
     <div class="layout">
-      <h2>Hi</h2>
+      <div className="layout__container">
+        <div className="layout__main-content">
+          ${ html(children) }
+        </div>
+      </div>
     </div>
   `;
 }
